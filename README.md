@@ -66,7 +66,8 @@ iCrackScope/
 
 * This tool is intended for **educational** and **ethical research** purposes only.
 * Requires **decrypted iOS binaries** (use Frida, dumpdecrypted, BFDecrypt, etc).
-
+* This tool is currently in active development, if you notice any bugs or errors you are more than welcome to submit the issue and i will look into it as soon as i can
+* A new module called class_dump_wrapper which focus in external class-dump handling is coming soon...
 ---
 
 ## 📜 License
