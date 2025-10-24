@@ -17,7 +17,7 @@
 
 ```bash
 # Make sure Python 3.8+ and pip are installed
-pip install lief
+pip install -r requirements.txt
 ```
 
 ---
@@ -34,7 +34,7 @@ python main.py /path/to/decrypted_binary --jailbreak
 ### Example:
 
 ```bash
-python main.py Payload/AppName --ads
+python main.py Payload/AppName --ads --metadata
 ```
 
 ---
