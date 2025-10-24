@@ -25,13 +25,16 @@ pip install lief
 ## 🚀 Usage
 
 ```bash
-python main.py <decrypted_binary> [flags]
+python main.py /path/to/decrypted_binary --metadata
+python main.py /path/to/decrypted_binary --symbols
+python main.py /path/to/decrypted_binary --ads
+python main.py /path/to/decrypted_binary --jailbreak
 ```
 
 ### Example:
 
 ```bash
-python main.py Payload/AppName --metadata --symbols --jailbreak --ads
+python main.py Payload/AppName --ads
 ```
 
 ---
