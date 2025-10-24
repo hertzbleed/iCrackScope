@@ -14,11 +14,15 @@ def scan_jailbreak_checks(binary_path):
 
     try:
         binary = lief.parse(binary_path)
+        if not binary:
+            print(f"[!] Could not parse {binary_path}")
+            return
+
         print("\n== Jailbreak Check Heuristics ==")
         found = False
 
-        for segment in binary.segments:
-            if not segment.content:
+        for segment in getattr(binary, "segments", []):
+            if not getattr(segment, "content", None):
                 continue
             data = bytes(segment.content)
             for s in suspicious_strings:
